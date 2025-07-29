@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charsett="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porfolio Website Submission</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <scrip style="display: none;">
+            console.log("Welcome to my portfolio!")
+        </scrip>
+    </head>
+    <body>
+        <script>console.log("Hello, world!");</script>
+        <nav class="nav">
+            <img src="" alt="">
+            <ul>
+                <li><a href="C:\Users\Yeyian PC\Downloads\HTML projects\Portfolio\test\Cover-letter.html">COVER-LETTER</a></li>
+                <li><a href="C:\Users\Yeyian PC\Downloads\HTML projects\Portfolio\test\Resume.html">RESUME</a></li>
+                <li><a href="C:\Users\Yeyian PC\Downloads\HTML projects\Portfolio\test\Career-goal.html">CAREER-GOAL</a></li>
+            </ul>
+        </nav>
+        <div class="detel">
+            <header>
+                <h1>Res<span>ume</span></h1>
+                <div id="dateDisplay"></div>
+                <script>
+                    const dateDiv = document.getElementById("dateDisplay");
+                    const now = new Date();
+                    const formattedDate = now.toLocaleDateString();
+                    dateDiv.innerHTML = formattedDate;
+                </script>
+            </header>
+            <main>
+                <div class="row">
+                    <div class="column" onclick="openTab('b1');"><h3>About</h3></div>
+                    <div class="column" onclick="openTab('b2');"><h3>Job History</h3></div>
+                    <div class="column" onclick="openTab('b3');"><h3>Experience</h3></div>
+                </div>
+            </main>
+            <section>
+                <div id="b1" class="containerTab" >
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                </div>
+                <div id="b2" class="containerTab" >
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                    <div >
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                    </div>
+                </div>
+                <div id="b3" class="containerTab" s>
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                    <table>
+                        <caption><strong>Skills knowledge</strong></caption>
+                        <thead>
+                            <tr>
+                                <th><h2>Languages</h2></th>
+                                <th><h2>Time</h2></th>
+                                <th colspan="2"><h2>Level of Knowledge</h2></th>
+                                <th><h2>Difficulty</h2></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SCRATCH</td>
+                                <td><em>1 year</em></td>
+                                <td colspan="2"><progress id="file" value="80" max="100"> 80% </progress></td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>HTML</td>
+                                <td><em>1 year</em></td>
+                                <td colspan="2"><progress id="file" value="75" max="100"> 75% </progress></td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td><em>1 year</em></td>
+                                <td colspan="2"><progress id="file" value="60" max="100"> 60% </progress></td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>PYTHON</td>
+                                <td><em>1 year</em></td>
+                                <td colspan="2"><progress id="file" value="50" max="100"> 50% </progress></td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>JAVASCRIPT</td>
+                                <td><em>1 year</em></td>
+                                <td colspan="2"><progress id="file" value="25" max="100"> 25% </progress></td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td><em>1 year</em></td>
+                                <td colspan="2"><progress id="file" value="10" max="100"> 10% </progress></td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>             
+                </section><br><br>
+                <hr><br><br>
+                <article><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p></article>
+            </div>
+            <script>
+                function openTab(tabName) {
+                    var i, x;
+                    x = document.getElementsByClassName("containerTab");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                }
+                document.getElementById(tabName).style.display = "block";
+            }
+            </script>
+        </div><br><br>
+        <footer class="footer">
+            <div>
+                <a href="https://www.linkedin.com/" target="_blank">
+                <img src="C:\Users\Yeyian PC\Downloads\HTML projects\Portfolio\test\LinkedIn_icon.svg.webp" width="20px" height="20px"></a>
+                <!--<a href="" target="_blank">
+                <img src="" width="20px" height="20px"></a>
+                <a href="" target="_blank">
+                <img src="" width="20px" height="20px"></a>-->   
+            </div>
+            Creator: <mark>Jan Cruz</mark>   &copy; copyright reserved
+            <!--<small><a href="jan.porfolio@fake.com">jan.porfolio@fake.com</a></small>-->
+        </footer>
+    </body>
+</html>
+        
