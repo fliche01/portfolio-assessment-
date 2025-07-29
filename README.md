@@ -38,4 +38,5 @@ This is a personal portfolio website built for a web development assessment. It 
 
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License for Educational Use](LICENSE).
+
